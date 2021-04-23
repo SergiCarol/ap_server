@@ -1,0 +1,10 @@
+{% from "_formhelpers.html" import render_field %}
+<h1> Wifi Settings </h1>
+<form method=post>
+  <dl>
+    {{ render_field(form.SSID) }}
+    {{ render_field(form.password) }}
+    {{ render_field(form.confirm) }}
+  </dl>
+  <p><input type=submit value=Register>
+</form>
